@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        p{
+            background-color: red;
+            text-align: center;
+            color: yellow;
+            padding: 10px;
+            cursor: pointer;
+        }
+        div{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Divi Aç Kapat (Toogle)</p>
+    <p>Divi Aç Kapat (FadeToggle)</p>
+    <p>Divi Aç Kapat (SlideToggle)</p>
+
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing.
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+        Lorem, ipsum dolor sit amet consectetur.
+    </div>
+
+    <script>
+        $(function(){
+            $("p").eq(0).click(function(){
+                $("div").toggle(1000);
+            })
+        });
+
+        $(function(){
+            $("p").eq(1).click(function(){
+                $("div").fadeToggle(1000);
+            })
+        });
+
+        $(function(){
+            $("p").eq(2).click(function(){
+                $("div").slideToggle(1000);
+            })
+        });
+    </script>
+</body>
+</html>
